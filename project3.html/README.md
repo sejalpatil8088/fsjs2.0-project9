@@ -1,2 +1,1 @@
-# Gaming landing page
-## I created this gaming landing page using html and css.
+# Today I created gaming website using html and css.

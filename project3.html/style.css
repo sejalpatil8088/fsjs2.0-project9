@@ -20,24 +20,27 @@
   /**************************Utility Classes******************************/
   .btn {
     border: none;
-    background-color: transparent;
-    font-family: "Manrope", sans-serif;
+    /* background-color: transparent; */
+    /* font-family: "Manrope", sans-serif; */
     color: var(--gray);
-    cursor: pointer;
+    /* cursor: pointer; */
     padding: 1em 2em;
   }
   .fill-btn {
-    background: linear-gradient(to right, transparent, transparent);
-    overflow: hidden;
+    /* background: linear-gradient(to right, transparent, transparent); */
+    background-color: #f4694c;
+    /* overflow: hidden; */
     position: relative;
-    transition: all 0.5s ease;
-    z-index: 2;
-    outline: 1px solid var(--white);
+    /* transition: all 0.5s ease;
+    z-index: 2; */
+    /* outline: 1px solid var(--white); */
     color: var(--white);
   }
   
-  .fill-btn::before {
-    content: "";
+   .fill-btn::before {
+    background-color: #f4694c;
+    color: #000611;
+    /* content: "";
     position: absolute;
     top: 0;
     bottom: 0;
@@ -47,10 +50,10 @@
     transform: scaleX(0);
     transform-origin: left;
     transition: 0.5s ease;
-    z-index: -2;
-  }
+    z-index: -2; */
+  } 
   .fill-btn:hover::before {
-    transform: scaleX(1);
+    transform:none;
   }
   .heading {
     text-align: center;
@@ -109,7 +112,7 @@
   .btn-container {
     display: flex;
     gap: 2em;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
   }
   .sign-up-btn:hover{
@@ -117,6 +120,11 @@
     background-color:var(--tomato) ;
     /* outline-color: var(--white); */
     color: white;
+  }
+  .sign-in-btn{
+    background-color: #f4694c;
+    color: #ffffff;
+
   }
   
   
@@ -164,6 +172,10 @@
     color: var(--tomato);
     background-color: transparent;
     outline-color: var(--white);
+  }
+  .learn-more-btn:hover{
+         background-color: #ffffff;
+         color: var(--black);
   }
   
   .hero-right {
@@ -311,13 +323,14 @@
     color: var(--tomato);
     background-color: transparent;
   }
-  .explore-btn-container > .fill-btn {
+  /* .explore-btn-container > .fill-btn {
     color: var(--tomato);
     outline: 1px solid var(--tomato);
     z-index: 3;
-  }
+  } */
   .explore-btn-container > .fill-btn:hover {
-    color: var(--white);
+    color: var(--black);
+    border: 2 px#000611;
   }
   .explore-right-content {
     display: flex;
@@ -552,13 +565,13 @@
   }
   
   /**********************Media Queries***************************/
-  @media screen and (max-width: 1190px) {
+  @media screen and (max-width: 9000px) {
     .recom-container {
       justify-content: center;
     }
   }
   
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 900px) {
     nav {
       justify-content: center;
     }
@@ -600,7 +613,7 @@
     }
   }
   
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 700px) {
     .hero-heading {
       font-size: 2rem;
     }
@@ -640,7 +653,7 @@
    
   }
   
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 500px) {
     .recom-container {
       justify-content: center;
     }
